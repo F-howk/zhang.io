@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>..</title>
+		
+		<style>
+		
+		
+		body{
+	margin: 0px;
+}
+li{
+	list-style: none;
+}
+
+#bl2{
+	position: absolute;
+	top: 60px;
+}
+.nav li a{
+	text-decoration: none;
+	color: #777;
+}
+
+.nav-main{
+	height: 40px;
+	margin-top: 0px;
+}
+.nav-main li{
+	padding: 10px;
+	font-size: 15px;
+	margin-left: 15px;
+	float: left;
+	list-style: none;
+}
+.nav-main a:hover{
+	color: #fff;
+}
+#home{
+	color: #fff;
+}
+.nav{
+	position: fixed;
+	z-index: 10;
+	top:0px;
+	width: 100%;
+	height: 40px;
+	background-color: #222;
+	
+}
+.nav li{
+	position: relative;
+	float: left;
+	left:15%;
+}
+.nav a{
+	color: #777;
+	text-decoration:none;
+}
+.nav ul:hover{
+	color: #fff;
+}
+
+.nav p{
+	padding: 0px;
+}
+.name{
+	padding: 5px 10px;
+	float: left;
+	color: #777;
+	text-decoration: none;
+	font-size: 20px;
+	position: relative;
+	left:15%;
+}
+.name:hover{
+	color: #fff;
+}
+.dp{
+	background-color: blank;
+	border-color:blank;
+	color: grey;
+	border: 0;
+	margin:0 auto;
+}
+.email{
+	width: 200px;
+	height: 25px;
+	margin-top:4px ;
+	float: right;
+	margin-right:5px ;
+	color: darkgray;
+}
+.password{
+	width: 200px;
+	height: 25px;
+	margin-top:4px ;
+	float: right;
+	margin-right:5px ;
+	color:darkgray;
+}
+.button{
+	width: 60px;
+	height: 30px;
+	margin-top:5px ;
+	float: right;
+	margin-right:200px ;
+	color:black;
+}
+.log-li{
+	position: absolute;
+	right: 5px;
+	top: -5px;
+	color: #777;
+}
+.log a{
+	margin-right: 15px;
+}
+.log a:hover{
+	color: #fff;
+}
+#sidebar{
+	width: 20%;
+	z-index: 1;
+	float: left;
+	font-weight: 200;
+	min-width: 20px;
+	margin-left: 20px;
+	margin-right: 40px;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+	box-shadow: 0px 0px 1px 1px #ccc;
+}
+.li-sidebar{
+	border:0px solid darkgray;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: 700px;
+	color: #999;
+	font-family:"微软雅黑" ;
+	font-size: 12px;
+	width: 80px;
+	height: 20px;
+	background-color: gray;
+	text-align:center;
+}
+.li-head{
+	border:0px solid darkgray;
+	width:80px;
+	height: 20px;
+	background-color: gray;
+	text-align: center;
+	
+}
+.head{
+	margin-top:0px;
+	border: 1px solid gray;
+	height: 100%;
+	width:230px ;
+	border-bottom: 0px solid gray;
+	position: relative;
+}
+.head li{
+	margin-top:0px;
+	border: 0px solid gainsboro;
+	height:100%;
+	width:230px ;
+	border-bottom: 1px solid gray;
+	position: relative;
+}
+.li-head:hover{
+	background-color: #F5F5F5;
+	font-weight: 700;
+	color: #999;
+	font-family:"微软雅黑" ;
+	font-size: 12px;
+}
+#first-link{
+	background-color:blue;
+	color: #fff;
+	width: 210px;
+}
+#first-link a:hover{
+	background-color: #0088cc;
+	color: #fff;
+}
+.nav2 a{
+	padding: 0px 10px;
+	display: block;
+	font-weight: 500;
+	font-size: 14px;
+	color: #08c;
+	text-decoration: none;
+	border-radius: 2px;
+}
+.nav2 a:hover{
+	background-color: #999;
+	color: #333;
+}
+.nav2 li{
+	margin-right: 10px;
+	line-height: 1.5em;
+	
+}
+#main{
+	width: 71%;
+	float: left;
+	z-index: 1;
+}
+#banner{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #eee;
+	border-radius: 3px;
+	width: 80%;
+	padding: 60px;
+	float: left;
+	box-shadow: 0px 0px 2px 1px #ccc;
+}
+#banner h1{
+	color: #333;
+	text-align: left;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	font-size: 60px;
+	line-height: 1em;
+}
+.span{
+	font-weight: 500;
+}
+#banner p{
+	color: #333;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 30px;
+	text-align: left;
+}
+.frist-more{
+	text-decoration: none;
+	color: #fff;
+	padding: 11px 19px;
+	background-color: #0088CC;
+	border-radius: 10px;
+	transition: padding 0.5s, background-color 1s; 
+}
+.frist-more:after{
+}
+.frist-more:hover{
+	padding: 11px 25px;
+	background-color: greenyellow;
+}
+#table{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.B{
+	width: 30%;
+	float: left;
+	padding-right: 20px;
+}
+.B h1{
+	color: #333;
+}
+.B p{
+	font-size:12px;
+	color: gray;
+	line-height:18px;
+}
+.read-more{
+	text-decoration: none;
+	background-color:black;
+	color: #F5F5F5;
+	padding: 5px 15px;
+	border-radius: 5px;
+	transition: padding 0.5s, background-color 2s;
+}
+.read-more:after{
+}
+.read-more:hover{
+	padding: 10px 20px;
+	background-color:yellowgreen;
+}
+footer{
+	clear: both;
+	text-align: center;
+}
+</style>
+	    <link href="css/bootstrap-responsive.css" >
+	    <link href="css/bootstrap-responsive.min.css" >
+	    <link href="css/bootstrap.css" >
+	    <link href="css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<header>
+			<nav class="nav">
+				<a href="#" class="name">Project name</a>
+
+				<ul class="nav-main">
+					<li>
+						<a herf="#" id="home">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li> 
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				 	<li class="li">
+						<a href="#" class="dropdwon">
+						 <select name="state" class="table" >
+					<optioon value="Alabama">Dropdwon</optioon>
+					<option value="Alaska">Dropdwon</option>
+					<option value="California">California</option>
+					<option vlaue="Colorado">Colorado</option>
+				</select>
+</li>
+					<form>
+			<input type="button" class="button"value="sign in" />
+		<input type="password" class="password" placeholder="password"/>
+			<input type="email" class="email" value="email"/>
+			
+		</form>
+	
+			</ul>
+			</nav>
+		</header>
+    <div id="bl2">
+		<div id="sidebar">
+			<aside>
+				<ul class="nav2">
+					<li class="li-sidebar">SIDEBAR</li>
+					<div class="head">
+					<li>
+						<a href="#" id="first-link">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li> 
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					</div>
+					<li class="li-sidebar">SIDEBAR</li>
+					<div class="head">
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li></div>
+					<li class="li-sidebar">SIDEBAR</li>
+					<div class="head">
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+					</li></div>
+				</ul>
+			</aside>
+		</div>
+
+		<div id="main">
+			<div id="banner">
+				<h1>Hello,world!</h1>
+				<p>This is a simple hero unit,a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+			    <p><a href="#" class="frist-more">Read more</a></p>
+			</div>
+			<div id="table">
+				<div class="B">
+				<h1>Heading</h1>
+				<p>Donec id elid non mi porta gravda at eget metus.Fusce
+				<br>dapibus,tellus ac cursus commodo,tortor mauris
+				<br/>condimentum nibh,ut fermentum massa justo sit amet
+				<br/>risus.Etiam porta sem malesuada magna molllis
+				<br />euismod.Donec sed odio dui.
+				</p>
+				<p><a href="#" class="read-more">View details>></a></p>
+				</div>
+				<div class="B">
+				<h1>Heading</h1>
+				<p>Donec id elid non mi porta gravda at eget metus.Fusce
+				<br>dapibus,tellus ac cursus commodo,tortor mauris
+				<br/>condimentum nibh,ut fermentum massa justo sit amet
+				<br/>risus.Etiam porta sem malesuada magna molllis
+				<br />euismod.Donec sed odio dui.
+				</p></p>
+				<p><a href="#" class="read-more">View details>></a></p>
+				</div>
+				<div class="B">
+				<h1>Heading</h1>
+				<p>Donec id elid non mi porta gravda at eget metus.Fusce
+				<br>dapibus,tellus ac cursus commodo,tortor mauris
+				<br/>condimentum nibh,ut fermentum massa justo sit amet
+				<br/>risus.Etiam porta sem malesuada magna molllis
+				<br />euismod.Donec sed odio dui.
+				</p></p>
+				<p><a href="#" class="read-more">View details>></a></p>
+				</div>
+				
+			</div>
+		</div>
+		<footer>Copyright ©2017 张晨 All Rights Reserved.</footer>
+    </div>
+    
+	</body>
+
+</html>
